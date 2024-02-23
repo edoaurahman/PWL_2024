@@ -36,6 +36,11 @@ Route::get('/', function () {
 // });
 
 // Controller
+Route::get('greeting', [WelcomeController::class, 'greeting']);
+// Perhatikan hamalan yang muncul dan Jelaskan pengamatan anda
+// Jika kita mengakses URL http://localhost:8000/greeting, maka akan muncul tampilan seperti berikut:
+// Hello, Ridho Aulia' Rahman
+
 Route::resource('photos', PhotoController::class);
 
 Route::get('/', [HomeController::class, 'index']);
